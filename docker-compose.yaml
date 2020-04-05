@@ -1,0 +1,12 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+    tty: true
+    environment:
+      TZ: Asia/Tokyo
+    ports:
+      - "2300:2300"
+    volumes:
+      - .:/root/project
